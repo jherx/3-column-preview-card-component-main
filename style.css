@@ -1,6 +1,124 @@
+:root{
+    --orange: #e28525;
+    --aqua: #016972;
+    --greenDark: #00403f;
+    font-size: 1em;
+    font-family: 'Lexend Deca', sans-serif;
+    user-select: none;
+
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: #fff;
+    font-weight:700; 
+
+}
+p{
+    color: #fff;
+    font-weight: 400;
+    line-height: 20px;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin:  auto;
+    padding: 50px;
+    flex: 1 ;
+}
+.seccion-box{
+    height: 450px;
+    width: 250px;
+    padding: 25px;
+    
+}
+.card-1{
+    background: var(--orange);
+    border-radius: 15px 0px 0px 15px;
+
+}
+
+.card-2{
+    background: var(--aqua);
+}
+
+.card-3{
+    background: var(--greenDark);
+    border-radius: 0px 15px 15px 0px;
+}
+
+.btn-clasic{
+   margin-top: 100px;
+   padding: 10px;
+   color: #fff;
+   border: 2px solid #fff;
+   outline: none;
+   border-radius: 40px;
+   width: 120px;
+   transition: all .25s;
+   background: hsla(0, 0%, 100%, 0.75);
+}
+
+
+
+.btn-card_1{
+    color: var(--orange);
+}
+
+.btn-card_2{
+    color: var(--aqua);
+}
+
+.btn-card_3{
+    color: var(--greenDark);
+}
+
+
+
+
+
+.btn-card_1:hover{
+    color: #FFF;
+    background: var(--orange);
+}
+
+.btn-card_2:hover{
+    color: #fff;
+    background: var(--aqua);
+}
+
+.btn-card_3:hover{
+    color: #fff;
+    background: var(--greenDark);
+}
+
+@media  (max-width:750px) {
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .card-1{
+        border-radius: 15px 15px 0px 0px ;
+    }
+    .card-3{
+        border-radius: 0px 0px 15px 15px;
+    }
+    .btn-clasic{
+        margin-top: 70px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* footer */
 .attribution { 
     font-size: 11px; text-align: center; 
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: #3e52a3; 
 }
