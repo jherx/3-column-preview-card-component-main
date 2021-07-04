@@ -20,15 +20,14 @@ p{
 }
 .contenedor{
     display: flex;
+    width: 1125px;
     justify-content: center;
-    margin:  auto;
-    padding: 50px;
-    flex: 1 ;
+    margin:  50px auto;
 }
 .seccion-box{
-    height: 450px;
+
     width: 375px;
-    padding: 25px;
+    padding: 15px;
     
 }
 .card-1{
@@ -72,10 +71,6 @@ p{
     color: var(--greenDark);
 }
 
-
-
-
-
 .btn-card_1:hover{
     color: #FFF;
     background: var(--orange);
@@ -91,11 +86,24 @@ p{
     background: var(--greenDark);
 }
 
-@media  (max-width:750px) {
+
+
+/* footer */
+.attribution { 
+    font-size: 11px; text-align: center; 
+    padding: 30px;
+}
+.attribution a { 
+    color: #3e52a3; 
+}
+@media   (max-width:675px) and (min-width:320px)   {
     .contenedor{
         flex-direction: column;
+        width: 90%;
     }
-
+    .seccion-box{
+        width: 100%;
+    }
     .card-1{
         border-radius: 15px 15px 0px 0px ;
     }
@@ -114,11 +122,3 @@ p{
 
 
 
-
-/* footer */
-.attribution { 
-    font-size: 11px; text-align: center; 
-}
-.attribution a { 
-    color: #3e52a3; 
-}
